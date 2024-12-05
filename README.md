@@ -6,7 +6,7 @@ The system:
 1. Fine-tunes a pre-trained (distilbert-base-uncased) QA model on the SQuAD Augmented V2 dataset from Hugging Face. (Dataset link: https://huggingface.co/datasets/christti/squad-augmented-v2)
 2. Provides an interactive web interface using Gradio for answering user-provided questions based on input contexts.
 3. Although English is primarily supported, this pipeline can be extended to other languages like Bangla with suitable datasets and pre-trained multilingual models.
-4. Due to low GPU and Time Constraint, only 5000 samples were used from the training dataset.
+4. Due to low GPU and Time Constraint, only 5000 samples were used from the training dataset. As a result, the answer mostly is not accurate. I believe if the full dataset can be utilized instead of 5000 samples, it will be able to predict the answer accurately. 
 
 Project Structure
 1.	fine_tune.py: Contains the code for fine-tuning the pre-trained DistilBERT model.
